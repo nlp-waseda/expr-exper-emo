@@ -1,0 +1,5 @@
+protobuf
+scipy
+sentencepiece
+torch
+transformers

@@ -1,5 +1,31 @@
 # Building a Dialogue Corpus Annotated with Expressed and Experienced Emotions
 
+The repository for the paper [Building a Dialogue Corpus Annotated with Expressed and Experienced Emotions](https://aclanthology.org/2022.acl-srw.3/) at ACL SRW 2022.
+
+## Requirements
+
+- Python==3.9.4
+
+## Training
+
+The code for training is based on the document [Fine-tuning with custom datasets](https://huggingface.co/transformers/v4.12.5/custom_datasets.html).
+
+```bash
+python train.py \
+    --train_jsonl $TRAIN_JSONL \
+    --val_jsonl $VAL_JSONL \
+    --output_dir $OUTPUT_DIR \
+    --pretrained_model_name_or_path $PRETRAINED_MODEL_NAME_OR_PATH
+```
+
+Run the model for prediction:
+
+```bash
+python pred.py \
+    --test_jsonl $TEST_JSONL \
+    --model_path $OUTPUT_DIR
+```
+
 ## Citation
 
 ```bibtex
