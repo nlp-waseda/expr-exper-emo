@@ -119,6 +119,12 @@ python pred.py \
     --model_path $OUTPUT_DIR
 ```
 
+### Multi-Task Learning
+
+Use `train_multi_with_bert.py` and `pred_multi_with_bert.py` instead.
+
+Note that with the code, you can only train BERT-based models.
+
 ## Citation
 
 ```bibtex
