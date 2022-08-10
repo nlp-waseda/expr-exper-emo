@@ -4,7 +4,7 @@ The repository for the paper [Building a Dialogue Corpus Annotated with Expresse
 
 ## Corpus
 
-will be released
+The utterance texts are replaced by the Twitter IDs.
 
 ### Example
 
